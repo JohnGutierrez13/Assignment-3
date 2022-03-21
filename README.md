@@ -1,1 +1,8 @@
 # Assignment-3
+
+TEAM MEMBERS:
+
+JOHN GUTIERREZ
+
+LINKS:
+
