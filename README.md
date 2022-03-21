@@ -6,3 +6,5 @@ JOHN GUTIERREZ
 
 LINKS:
 
+[Link to website](https://johngutierrez13.github.io/Assignment-3/)
+
