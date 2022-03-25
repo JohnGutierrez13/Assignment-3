@@ -100,7 +100,15 @@ function selectColor(){
 
 // Fill all uncolored cells
 function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+    let cols = getColumnsFromGrid()
+    for(i = 0 ; i < numCols*numRows; i++)
+    {
+        // Adding color to only uncolored rows
+        if(!cols[i].style.backgroundColor) 
+        {
+            cols[i].style.backgroundColor = colorSelected; 
+        }
+    }
 }
 
 // Fill all cells
