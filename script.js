@@ -81,7 +81,15 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    alert("Clicked Remove Col"); // Replace this line with your code.
+    if(numCols == 0)
+    {
+        return;
+    }
+    for(i = 0 ; i < numRows; i++)
+    {
+        tb.rows[i].deleteCell(-1); //removing column from last
+    }
+    numCols--;
 }
 
 // Set global variable for selected color
