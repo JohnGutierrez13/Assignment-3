@@ -2,6 +2,7 @@
 let numRows = 0;
 let numCols = 0;
 let colorSelected; 
+let tb = document.getElementById("grid");
 
 //changes background color of the element
 function changeColor(cell)
