@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch localhost",
-            "file": "/Users/John/desktop/CSCI_395/gridmaker/index.html"
+            "file": "/Users/John/desktop/CSCI_395/Assignment-3/Assignment-3/index.html"
 
         }
     ]
