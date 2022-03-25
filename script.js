@@ -37,7 +37,19 @@ function addSingleCell()
 
 // Add a row
 function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+    if(isEmpty())
+    {
+        addSingleCell(); //adding a single cell if both columns and rows are zero
+        return;
+    }
+    //Ohterwise adding row
+    let row = tb.insertRow();
+    for(i = 0; i < numCols; i++)
+    {
+        let cell = row.insertCell();
+        cell.onclick = ()=>{changeColor(cell)}; //Adding onclick event to every new cell
+    }    
+    numRows++;
 }
 
 // Add a column
