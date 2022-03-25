@@ -113,7 +113,11 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    let cols = getColumnsFromGrid()
+    for(i = 0 ; i < numCols*numRows; i++)
+    {
+        cols[i].style.backgroundColor = colorSelected;            
+    }         
 }
 
 // Clear all cells
