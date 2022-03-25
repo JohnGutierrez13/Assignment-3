@@ -8,7 +8,6 @@ function changeColor(cell)
 {
     cell.style.backgroundColor = colorSelected;
 }
-
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
