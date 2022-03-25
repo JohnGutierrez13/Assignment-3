@@ -1,9 +1,22 @@
 tr,td{
-    border:1px;
-    border-style: solid;
+    border:3px;
+    border-style: double;
+    color: black;
 }
+
 td{
     height: 50px;
     width: 50px;
-    background-color: white;
+    background: white;
+}
+
+button{
+    top: 2%;
+    background-color: #463be7;
+    color: #fff;
+}
+
+button:hover{
+    background-color: black;
+    transition: 0.7s;
 }
