@@ -19,6 +19,12 @@ function isEmpty()
     return false;
 }
 
+//return every columns from grid
+function getColumnsFromGrid()
+{
+    return document.getElementById("grid").getElementsByTagName("td");
+}
+
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
