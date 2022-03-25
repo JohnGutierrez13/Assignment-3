@@ -92,7 +92,7 @@ function removeC() {
     numCols--;
 }
 
-// Set global variable for selected color
+// Set global variable for selected colors
 function selectColor(){
     colorSelected = document.getElementById("selectedColorId").value;
     console.log(colorSelected);
