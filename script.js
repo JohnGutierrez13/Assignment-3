@@ -25,6 +25,16 @@ function getColumnsFromGrid()
     return document.getElementById("grid").getElementsByTagName("td");
 }
 
+//Add Single Cell
+function addSingleCell()
+{
+    let row = tb.insertRow();
+    let cell = row.insertCell();
+    cell.onclick = ()=>{changeColor(cell)};
+    numRows++;
+    numCols++;
+}
+
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
