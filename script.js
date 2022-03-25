@@ -3,6 +3,11 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected; 
 
+//changes background color of the element
+function changeColor(cell)
+{
+    cell.style.backgroundColor = colorSelected;
+}
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
