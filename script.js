@@ -71,7 +71,12 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    if(numRows == 0)
+    {
+        return;
+    }
+    tb.deleteRow(-1); //removing rows from end
+    numRows--;
 }
 
 // Remove a column
