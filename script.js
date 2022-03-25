@@ -8,6 +8,17 @@ function changeColor(cell)
 {
     cell.style.backgroundColor = colorSelected;
 }
+
+//Checks if grid is fully empty or not
+function isEmpty()
+{
+    if(numCols == 0 && numRows == 0)
+    {
+        return true;
+    }
+    return false;
+}
+
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
