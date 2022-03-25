@@ -52,9 +52,21 @@ function addR() {
     numRows++;
 }
 
-// Add a column
+/// Add a column
 function addC() {
-    alert("Clicked Add Col"); // Replace this line with your code.
+    if(isEmpty())
+    {
+        addSingleCell(); //Adding a single cell if both columns and rows are zero
+        return;
+    }
+    //Ohterwise adding column to every row
+    for(i = 0 ; i < numRows; i++)
+    {
+        let cell = document.createElement("td");
+        cell.onclick = ()=>{changeColor(cell)}; //Adding onclick event to every new cell
+        tb.rows[i].appendChild(cell); //Adding column to ith row
+    }
+    numCols++;
 }
 
 // Remove a row
